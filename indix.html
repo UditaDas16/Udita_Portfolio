@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Udita Das • Portfolio</title>
+  <meta name="description" content="Udita Das — Aspiring AI/ML Engineer | Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background blobs -->
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <a href="#" class="brand"><span class="logo-dot"></span><span class="brand-text">Udita <strong>Das</strong></span></a>
+    <nav id="navLinks" class="links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certificates</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn small">🌙</button>
+    </nav>
+    <button id="hamburger" class="hamburger"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="section hero reveal">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="intro">Hello, I’m</p>
+        <h1 class="title">Udita <span class="accent">Das</span></h1>
+        <h2 class="typed"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="tagline">Proactive and solution-oriented CS undergrad (AIML) with hands-on C & Python, mini-projects, and a passion for building clear, functional solutions.</p>
+        <div class="cta">
+          <a class="btn primary" href="cv.pdf" target="_blank">Download CV</a>
+          <a class="btn outline" href="#contact">Hire / Contact</a>
+        </div>
+        <div class="quick-facts">
+          <div class="chip">📍 Jharsuguda, Odisha</div>
+          <div class="chip">🎓 B.Tech CSE (AIML), VGU Jaipur</div>
+          <div class="chip">💡 AI Tools • Power BI (Basics)</div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="avatar"><span>UD</span></div>
+        <div class="glass stat"><div class="stat-num" data-count="3">0</div><div class="stat-label">Mini Projects</div></div>
+        <div class="glass stat"><div class="stat-num" data-count="2">0</div><div class="stat-label">Hackathons</div></div>
+        <div class="glass stat"><div class="stat-num" data-count="1">0</div><div class="stat-label">Gold in Chess</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <div class="container">
+      <h3 class="section-title">About <span class="accent">Me</span></h3>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <p>I’m a Computer Science undergraduate specializing in <strong>AI & ML</strong> at <strong>Vivekanand Global University (Jaipur)</strong>. I build functional prototypes using <strong>C</strong> and <strong>Python</strong> and love solving real-world problems with clean, structured logic.</p>
+          <ul class="timeline">
+            <li><span class="time">2024 — Present</span><span class="dot"></span><span class="item">B.Tech CSE (AIML), VGU Jaipur</span></li>
+            <li><span class="time">2023 — 2024</span><span class="dot"></span><span class="item">Senior High School, DPS Rourkela</span></li>
+            <li><span class="time">2021 — 2022</span><span class="dot"></span><span class="item">Junior High, DAV Jharsuguda</span></li>
+          </ul>
+        </div>
+        <div class="about-side">
+          <div class="glass keypoints"><h4>Technical Skills</h4><div class="chips"><span class="chip">C</span><span class="chip">Python</span><span class="chip">HTML</span><span class="chip">AI Tools</span><span class="chip">Power BI</span></div></div>
+          <div class="glass keypoints"><h4>Soft Skills</h4><div class="chips"><span class="chip">Communication</span><span class="chip">Adaptability</span><span class="chip">Critical Thinking</span></div></div>
+          <div class="glass keypoints"><h4>Languages</h4><div class="chips"><span class="chip">English</span><span class="chip">Hindi</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h3 class="section-title">Mini <span class="accent">Projects</span></h3>
+      <div id="projectGrid" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <h3 class="section-title">Technical <span class="accent">Skills</span></h3>
+      <div class="skills">
+        <div class="skill"><span>C Programming</span><div class="bar"><span data-level="85"></span></div></div>
+        <div class="skill"><span>Python (Basics)</span><div class="bar"><span data-level="65"></span></div></div>
+        <div class="skill"><span>HTML (Basics)</span><div class="bar"><span data-level="60"></span></div></div>
+        <div class="skill"><span>Power BI (Basics)</span><div class="bar"><span data-level="50"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certs" class="section reveal">
+    <div class="container">
+      <h3 class="section-title">Certificates</h3>
+      <div id="certGrid" class="grid grid-cards"></div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section reveal">
+    <div class="container">
+      <h3 class="section-title">Achievements & <span class="accent">Hackathons</span></h3>
+      <div class="grid grid-cards">
+        <div class="card glass"><h4>Code Red Hackathon</h4><p>Participant</p></div>
+        <div class="card glass"><h4>Code Xccelerate Hackathon</h4><p>Finalist</p></div>
+        <div class="card glass"><h4>Chess (College)</h4><p>Gold Medalist</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <h3 class="section-title">Let’s <span class="accent">Connect</span></h3>
+      <div class="contact-wrap glass">
+        <div class="contact-info">
+          <p>📞 <a href="tel:+917735284695">+91 7735284695</a></p>
+          <p>✉️ <a href="mailto:uditadas2006@gmail.com">uditadas2006@gmail.com</a></p>
+          <p>📍 Jharsuguda, Odisha</p>
+        </div>
+        <form class="contact-form" onsubmit="return handleSubmit(event)">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <p id="formMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer"><p>© <span id="year"></span> Udita Das • Built with 💜</p></footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
